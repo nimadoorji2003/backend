@@ -27,9 +27,11 @@ app.use(
 // Routes
 const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
+const passwordRoutes = require("./routes/passwordRoutes");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/password", passwordRoutes);
 
 // Listen on Port
 const PORT = process.env.PORT || 5000;
